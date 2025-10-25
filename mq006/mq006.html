@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudoTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <i id="Burger"class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Noticia</a></li>
+                <li><a href="#">Sobre nos</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Teste</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quibusdam, eos aliquam dolores rem odio voluptatem voluptas officiis soluta blanditiis voluptate ea ipsam inventore, sapiente animi odit. Perspiciatis, architecto accusamus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quidem, rerum pariatur amet alias labore quos doloremque placeat esse aliquid dicta reiciendis odit corporis, itaque est quisquam, reprehenderit doloribus natus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quibusdam, eos aliquam dolores rem odio voluptatem voluptas officiis soluta blanditiis voluptate ea ipsam inventore, sapiente animi odit. Perspiciatis, architecto accusamus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quidem, rerum pariatur amet alias labore quos doloremque placeat esse aliquid dicta reiciendis odit corporis, itaque est quisquam, reprehenderit doloribus natus!</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block';
+            }
+        }
+
+        function mudoTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
