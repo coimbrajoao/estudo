@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/*
+    paleta de cores
+    verde #49a09d
+    lilas #5f2c82
+*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #5f2c82;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#Login {
+    width: 250px;
+    height: 515px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+div#imagem img {
+    display: block;
+    background-size: cover;
+    width:  250px;
+    height: 200px;
+}
+
+div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+div#formulario p {
+    font-size: 0.8em;
+}
+
+
+
+div.formulario-input {
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.formulario-input > i{
+    color: white;
+    font-size: 1.9em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.formulario-input > input {
+    background-color: #49cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.formulario-input  > label {
+    display: none;
+}
+
+
+div.fomulario-botao {
+    display: flex;
+    height: 120px;
+    justify-content: space-around;
+    flex-flow: column;
+    align-items: center;
+}
+
+div.fomulario-botao > input{
+    margin-top: 10px;
+    width:100%;
+    height: 50px;
+    background-color: #49cfcd;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+
+div.fomulario-botao > input:hover{
+    background-color: #77a1a1;
+}
+
+
+div.fomulario-botao > a {
+    text-decoration: none;
+
+    color: #49cfcd;
+    border: 1px solid #49cfcd;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+div.fomulario-botao > a:hover {
+    text-decoration: none;
+    background-color: #49cfcd75;
+    color: #49cfcd;
+    border: 1px solid #49cfcd;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
